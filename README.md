@@ -177,10 +177,9 @@
 
 ---
 ### 질문 References
-* [python-interview-questions1](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
-* [python-interview-questions2](https://www.interviewbit.com/python-interview-questions/)
-* [python-interview-questions3](https://soniacomp.medium.com/python-7d914df26039)
+* [python-interview-questions1(영문)](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+* [python-interview-questions2(영문)](https://www.interviewbit.com/python-interview-questions/)
+* [python-interview-questions3(한글)](https://soniacomp.medium.com/python-7d914df26039)
 * [기술면접가이드](https://velog.io/@mongle/기술면접-가이드)
-* [python-interview-questions3](https://soniacomp.medium.com/python-7d914df26039)
 * [Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
-* [Basic Knowledge of Computer Science](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+* [Basic Knowledge of Computer Science](https://github.com/Seogeurim/CS-study)
