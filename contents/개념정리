@@ -1,0 +1,47 @@
+### 
+
+- 파이썬에서 알아야할 기본 용어와 개념
+    - Python sequence
+        - Sequence
+        - 리스트 / 튜플 차이점
+        - mutable, immutable
+    - 클로저 
+    - 데코레이터 (Property, Login decorator  등) 
+    - iterable, iterator 
+        - iterator, generator를 메모리 관점에서 설명하면?
+    - 제너레이터, yield 
+    - Lambda와 Def의 주된 차이점은 무엇인가요? 
+        - lambda 
+    - reduce, map, filter functions 
+    - pass by value, pass by reference, pass by object 
+    - shallow copy & deep copy 
+- 파이썬의 변수 or 메모리 관리
+    - Variable scope
+    - Context manager
+    - Underscore
+    - Getter, Setter
+    - GIL 
+    - Reference Counting 
+    - Garbage Collection 
+    - 힙 메모리, 스택 메모리의 차이점 (파이썬 객체 관리)
+        - [https://seonghyeon.dev/python-memory-management](https://seonghyeon.dev/python-memory-management)
+        - class 생성 시 값들이 메모리 어느 영역에 저장되는지
+        - local, global variable 차이 / 저장되는 위치
+    - 유용하게 관리하는 방법
+        - 문자열 결합을 피하기: for 문 대신 map, join / 문자열 formatting
+        - iterating over list/dict : copy 를 이용하기!
+        - [https://soniacomp.medium.com/python-7d914df26039](https://soniacomp.medium.com/python-7d914df26039)
+- OS 개념과 파이썬에서의 활용 방법
+    - 멀티 프로세스 멀티 스레드 
+        - process/ subprocess
+        - multi task, multi programing 
+        - multi process & multithreading 예제 
+        - 파이썬 Thread(GIL)가 느린 이유 [https://m.blog.naver.com/alice_k106/221566619995](https://m.blog.naver.com/alice_k106/221566619995)  
+        - 파이썬이 꼬리 재귀를 제공하지 않는 이유 [http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html](http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html)
+    - IO bound vs. CPU bound  
+    - 병렬성 vs. 동시성(Concurrency) 
+    - Blocking vs. Non blocking I/O 
+    - 동기 vs. 비동기 
+- 파이썬의 시리얼라이제이션
+    - 직렬화
+        - pickling vs unpickling
