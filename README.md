@@ -5,7 +5,7 @@
 **혹시 수정사항이 필요하다면 issues에 남겨주세요!**
 
 ### Table of Contents
-* 질의 응답
+* [질의 응답](#질의응답과-요약-답변)
 * [개념 정리](#개념-정리)
 
 
@@ -174,3 +174,13 @@
 
 ### 개념 정리
 
+
+---
+### 질문 References
+* [python-interview-questions1](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+* [python-interview-questions2](https://www.interviewbit.com/python-interview-questions/)
+* [python-interview-questions3](https://soniacomp.medium.com/python-7d914df26039)
+* [기술면접가이드](https://velog.io/@mongle/기술면접-가이드)
+* [python-interview-questions3](https://soniacomp.medium.com/python-7d914df26039)
+* [Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+* [Basic Knowledge of Computer Science](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
