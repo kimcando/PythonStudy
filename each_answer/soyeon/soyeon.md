@@ -37,6 +37,10 @@
     * yield 는 함수가 불리더라도 그 함수 내의 local variable 상태를 변환 시키지 않으면서 값을 반환해주는 것입니다.
     * 일반적으로 함수가 값을 반환할 때 return 키워드를 사용하는데, `yield`는 제너레이터를 반환하게 됩니다.
     * 일반적인 iterator 구현을 위한 `__iter__`와 `__next__` 메소드 대신 `yield`를 이용할 경우 아래와 같이 구현 가능합니다.
+    * yield의 짧은 [정의](https://www.geeksforgeeks.org/python-yield-keyword/#:~:text=Yield%20is%20a%20keyword%20in,is%20what%20makes%20a%20generator.)
+    * yield 전반적 [설명1](https://kkamikoon.tistory.com/90) , [설명2](https://tech.ssut.me/what-does-the-yield-keyword-do-in-python/)
+    * 쉬운 yield 사용 예제 [설명](https://www.daleseo.com/python-yield/)
+</details>
     ```
     from random import randint
     def random_number_generator(n):
@@ -54,11 +58,6 @@
     # 90
     # 3
     ```
-    * yield의 짧은 [정의](https://www.geeksforgeeks.org/python-yield-keyword/#:~:text=Yield%20is%20a%20keyword%20in,is%20what%20makes%20a%20generator.)
-    * yield 전반적 [설명1](https://kkamikoon.tistory.com/90) , [설명2](https://tech.ssut.me/what-does-the-yield-keyword-do-in-python/)
-    * 쉬운 yield 사용 예제 [설명](https://www.daleseo.com/python-yield/)
-</details>
-
 <details>
     <summary> labmda와 def 의 주된 차이점은 무엇인가요? </summary>
     * 두 가지 모두 파이썬에서 함수를 선언하는 방법입니다.
@@ -93,7 +92,24 @@
     * 깊은 복사는 새 복합 객체(한 객체가 다른 객체를 포함하는 것)를 만들고 원본 객체에 대한 복사를 재귀적으로 삽입합니다. 즉, 내부 객체들까지 모두 복사 2차원 3차원 리스트에 대해 원본 객체에 대한 참조를 다 만들어주는 것입니다.
     * 혹시 [참고](https://blockdmask.tistory.com/576)
 </details>
-
+```
+>>> a= [ [0,1],[2,3]]
+>>> b = a[:]
+>>> b
+[[0, 1], [2, 3]]
+>>> a
+[[0, 1], [2, 3]]
+>>> b[0]=3
+>>> b
+[3, [2, 3]]
+>>> a
+[[0, 1], [2, 3]]
+>>> b[1][1]=100
+>>> b
+[3, [2, 100]]
+>>> a
+[[0, 1], [2, 100]]
+```
 <details>
     <summary> Variable scope은 무엇인가요? 파이썬의 관점에서 설명한다면? </summary>
     * 파이썬에서 변수가 값을 참조할 때 따르는 규칙입니다.(LEGB: local, enclosed function locals, global, built-in)
