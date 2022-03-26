@@ -20,10 +20,24 @@
   * CPU와 상관없이 peripheral 시스템(인풋, 아웃풋, 네트워크)과 관련된 경우 IO bound 됐다고 함
   
 * python의 multiprocess, multithread 기능에 대해 설명해주세요.
+  * 여러개의프로세스를 동시에 실행시키는 parallel execution(병렬성) 을 위한 라이브러리 `from concurrent.futures import ThreadPoolExecutor`이 있고 또는 `multiprocessing` 모듈의 Pool 클래스 사용 가능
+  * 한 프로세스가 여러 thread를 실행 히시큰 concorrent execution(동시성)을 위한 라이브러리 `from concurrent.futures import ThreadPoolExecutor` 또는 `Threading`의 Thread 클래스 사용
 * IO bound와 CPU bound 작업일 때 파이썬의 어떤 식으로 처리하면 효율적일까요?
+  * cpu bound는 multi process를 사용,
+  * io bound에는 multi thread를 사용하는 것이 좋으나(메모리 공유 때문에 context switching 시간 감소) multi process를 쓰더라도 속도 이득을 얻을 수 있습니다.
   * 참고
-    *  
+    *  [참고](https://hhj6212.github.io/programming/python/2021/04/18/python-multi.html#:~:text=%EC%9D%B4%EC%97%90%20%EB%94%B0%EB%A5%B4%EB%A9%B4%2C%20multithreading%20%EC%9D%80%20%EC%97%AC%EB%9F%AC,%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%84%20%EB%A7%90%ED%95%A9%EB%8B%88%EB%8B%A4%20(parallelism).)
+    *  [사용 참고](https://monkey3199.github.io/develop/python/2018/12/04/python-pararrel.html)
 * 병렬성과 동시성에 대해 설명해주세요(CS일반)
+ * 병렬성 : 여러 프로세스에서 각 테스크를 실행함으로 실제로 동시에 여러 작업이 처리됩니다.
+ * 동시성 : 하나의 프로세스에서 여러 테스크를 수행하는데, 실제로는 동시에 처리되는게 아니지만 time slicing을 이용해 마치 여러개의 테스크가 수행되는 것 같은 것입니다.
 * blocking 과 non blocking에 대해 설명해주세요(CS일반)
+  * 두 개는 함수의 리턴 시점과 제어권에 따른 차이로 여러개의 작업이 처리돼야할 때, 한 작업이 처리되는 동안 다른 작업이 처리될 수 있느냐의 의미입니다.
+  * blocking 경우 요청한 일이 끝날 때까지 계속 기다려야하는 것이고
+  * non blocking은 A가 B함수에게 일을 요청한 후 뒤에 있는 다른 일을 이어서 수행할 수 있습니다.
 * synchronous 과 asynchronous 에 대해 설명해주세요(CS일반)
+  *  작업의 완료 여부를 계속 확인하는지 안하는지에 따라 나눌 수 있습니다.
+  *  동기 경우 함수 A가 B를 호출한 후 A가 계속 B의 완료 여부를 확인하지만
+  *  비동기는 함수 A가 신경쓰지 않고 B가 끝나면 알아서 A한테 전달해줍니다.
 * 파이썬의 시리얼라이제이션에 대해 설명해주세요. 관련된 모듈이 있나요? 어떤 때 써보셨나요?
+  * pickle : 객체를 아예 저장해준다. 
