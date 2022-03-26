@@ -20,7 +20,7 @@
   * CPU와 상관없이 peripheral 시스템(인풋, 아웃풋, 네트워크)과 관련된 경우 IO bound 됐다고 함
   
 * python의 multiprocess, multithread 기능에 대해 설명해주세요.
-  * 여러개의프로세스를 동시에 실행시키는 parallel execution(병렬성) 을 위한 라이브러리 `from concurrent.futures import ThreadPoolExecutor`이 있고 또는 `multiprocessing` 모듈의 Pool 클래스 사용 가능
+  * 여러개의프로세스를 동시에 실행시키는 parallel execution(병렬성) 을 위한 라이브러리 `from concurrent.futures import ProcessPoolExecutor`이 있고 또는 `multiprocessing` 모듈의 Pool 클래스 사용 가능
   * 한 프로세스가 여러 thread를 실행 히시큰 concorrent execution(동시성)을 위한 라이브러리 `from concurrent.futures import ThreadPoolExecutor` 또는 `Threading`의 Thread 클래스 사용
 * IO bound와 CPU bound 작업일 때 파이썬의 어떤 식으로 처리하면 효율적일까요?
   * cpu bound는 multi process를 사용,
